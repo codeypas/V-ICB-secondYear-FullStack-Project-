@@ -6,7 +6,7 @@ import { AiOutlineSearch } from 'react-icons/ai'
 import { Button } from 'flowbite-react'
 
 
-export default function signup() {
+export default function signin() {
   const navigate = useNavigate();
 
   return (
@@ -24,16 +24,6 @@ export default function signup() {
         {/* right half */}
         <div className='flex-1'>
           <form className='flex flex-col gap-5'>
-            {/* username */}
-            <div >
-              <Label value='User Name' />
-              <TextInput
-                type='text'
-                placeholder='User Name'
-                id='username'
-              />
-            </div>
-
             {/* email */}
             <div >
               <Label value='Email' />
@@ -54,16 +44,15 @@ export default function signup() {
               />
             </div>
             <Button color='blue'>
-              SignUp
+              Sign In
             </Button>
           </form>
           <div className='flex gap-3 text-sm mt-5'>
-            <span>Have an Account</span>
-            <Link to='/signin' className='text-blue-500'>Sign In</Link>
+            <span>Don't have an Account</span>
+            <Link to='/signup' className='text-blue-500'>Sign Up</Link>
           </div>
         </div>
       </div>
       </div>
       )
 }
-
