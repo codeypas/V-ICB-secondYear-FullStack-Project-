@@ -19,7 +19,7 @@ export default function Header() {
     </button>
 
    <div className='md:order-2'>
-   <Link to='/sign-in'>
+   <Link to='/signup'>
       <Button color='blue' outline>Sign In</Button>
     </Link>
     <Navbar.Toggle/>
