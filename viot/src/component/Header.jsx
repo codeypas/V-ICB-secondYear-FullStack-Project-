@@ -6,7 +6,7 @@ export default function Header() {
   return (
    <Navbar>
     <Link to='/' className='self-center whitespace-nowrap text-sm sm:text-xl font-bold'>
-    <span className='px-2 px-1 bg-gradient-to-b from-blue-200 to-blue-500'>V-IOT</span>
+    <span className='px-2 py-1 bg-gradient-to-b from-blue-200 to-blue-500'>V-IOT</span>
     </Link>
     <form>
       <TextInput type='text' placeholder='search' 
