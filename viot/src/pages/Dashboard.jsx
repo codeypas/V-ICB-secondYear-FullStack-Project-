@@ -1,17 +1,28 @@
-import { useEffect, useState } from 'react';
-import { useLocation } from 'react-router-dom';
+import React from 'react'
 
-export default function Dashboard() {
-  const location = useLocation();
-  const [tab, setTab] = useState('');
-  useEffect(() => {
-    const urlParams = new URLSearchParams(location.search);
-    console.log(tabFromUrl);
-  }, [location.search]);
+export default function dashboard() {
   return (
-    <div>Dashboard</div>
-  );
+    <div>
+      <h1>dashboard</h1>
+    </div>
+  )
 }
+
+
+// import { useEffect, useState } from 'react';
+// import { useLocation } from 'react-router-dom';
+
+// export default function Dashboard() {
+//   const location = useLocation();
+//   const [tab, setTab] = useState('');
+//   useEffect(() => {
+//     const urlParams = new URLSearchParams(location.search);
+//     console.log(tabFromUrl);
+//   }, [location.search]);
+//   return (
+//     <div>Dashboard</div>
+//   );
+// }
 
 
 
