@@ -1,3 +1,16 @@
+// import React from 'react'
+
+// export default function DashSidebar() {
+//   return (
+//     <div>
+//       <h1>dashsidebar</h1>
+//     </div>
+//   )
+// }
+
+
+
+
 import { Sidebar } from 'flowbite-react';
 import { HiUser, HiArrowSmRight } from 'react-icons/hi';
 import { useEffect, useState } from 'react';
@@ -20,7 +33,7 @@ export default function DashSidebar() {
         <Sidebar className='w-full md:w-56'>
             <Sidebar.Items>
                 <Sidebar.ItemGroup>
-                    <Link to='/dashboard?tab=profile'>
+                    <Link to='/dashboard?tab==profile' >
                         <Sidebar.Item 
                         active={tab === 'profile'} 
                         icon={HiUser} 
@@ -35,5 +48,5 @@ export default function DashSidebar() {
                 </Sidebar.ItemGroup>
             </Sidebar.Items>
         </Sidebar>
-    )
+    );
 }
