@@ -1,12 +1,32 @@
 import {Avatar, Button, Dropdown, DropdownDivider, DropdownItem, Navbar, TextInput} from 'flowbite-react';
 import { Link,useLocation } from 'react-router-dom';
 import {AiOutlineSearch} from 'react-icons/ai';
-import {useSelector} from 'react-redux';
-
+import {useDispatch, useSelector} from 'react-redux';
+import { signoutSuccess } from '../redux/user/userSlice';
 
 export default function Header() {
   const path=useLocation().pathname;
   const{currentUser}=useSelector(state=>state.user)
+  const dispatch=useDispatch();
+// for signout
+  const handelSignOut=async()=>{
+    try{
+      const res=await fetch('/api/user/signout',{
+        method:'POST',
+
+      });
+      const data=await res.json();
+      if(!res.ok){
+        console.log(data.message);
+      }
+      else{
+        dispatch(signoutSuccess());
+      }
+    }catch(error){
+      console.log(error.message);
+    }
+  }
+//for signout
   return (
    <Navbar className='border-b-2'>
     <Link 
@@ -47,7 +67,7 @@ export default function Header() {
           <Dropdown.Item>Profile</Dropdown.Item>
         </Link>
         <DropdownDivider/>
-          <Dropdown.Item>Sign Out</Dropdown.Item>
+          <Dropdown.Item onClick={handelSignOut}>Sign Out</Dropdown.Item>
     </Dropdown>
    ):
    (
