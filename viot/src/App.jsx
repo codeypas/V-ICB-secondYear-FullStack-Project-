@@ -1,12 +1,14 @@
-import React from 'react'
-import { BrowserRouter,Router,Route,Routes } from 'react-router-dom'
-import Home from './pages/Home'
-import Dashboard from './pages/Dashboard'
-import About from './pages/about'
-import Signup from './pages/Signup'
-import SignIn from './pages/SignIn'
-import Header from './component/header'
-import PrivateRoute from './component/privateRoute'
+import React from 'react';
+import { BrowserRouter,Router,Route,Routes } from 'react-router-dom';
+import Home from './pages/Home';
+import Dashboard from './pages/Dashboard';
+import About from './pages/about';
+import Signup from './pages/Signup';
+import SignIn from './pages/SignIn';
+import Header from './component/header';
+import PrivateRoute from './component/privateRoute';
+import CreatePost from './component/createPost';
+import AdminPrivateRoute from './component/adminPrivateRoute';
 
 export default function App() {
   return (
@@ -21,7 +23,10 @@ export default function App() {
       <Route element={<PrivateRoute/>}>
         <Route path='/Dashboard' element={<Dashboard/>}/>
       </Route>
-
+      <Route element={<AdminPrivateRoute/>}>
+        <Route path='/create-post' element={<CreatePost/>}/>
+      </Route>
+ 
     </Routes>
 
     </BrowserRouter>
