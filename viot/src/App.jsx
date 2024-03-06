@@ -7,8 +7,8 @@ import Signup from './pages/Signup';
 import SignIn from './pages/SignIn';
 import Header from './component/header';
 import PrivateRoute from './component/privateRoute';
-import CreatePost from './component/createPost';
 import AdminPrivateRoute from './component/adminPrivateRoute';
+import CreatePost from './pages/createPost';
 
 export default function App() {
   return (
