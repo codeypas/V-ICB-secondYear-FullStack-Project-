@@ -1,0 +1,40 @@
+/* Faculty.css */
+.faculty_container {
+    display: flex;
+    margin-top: 20vh;
+    flex-direction: column;
+    align-items: center;
+}
+
+.prof{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    text-align: center;
+}
+
+.faculty_content{
+    padding-bottom: 50px;
+    font-size: 30px;
+}
+
+
+@media (max-width: 768px) {
+    .prof {
+        flex-direction: column;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 40px;
+    }
+    .cat1{
+        margin-bottom: 40px;
+    }
+    .cat2{
+        margin-bottom: 40px;
+    }
+    .cat3{
+        margin-bottom: 40px;
+    }
+}

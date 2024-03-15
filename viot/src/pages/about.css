@@ -1,0 +1,66 @@
+/* about.css */
+.about_content {
+    padding: 20px;
+}
+
+.page_heading {
+    text-align: center;
+    margin-bottom: 60px;
+    margin-top: 90px;
+}
+
+.content_wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.image_paragraph {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.image_paragraph img {
+    width: 400px;
+    height: 300px;
+    margin-left: 150px;
+    border: 1px solid black; /* Add border */
+    border-radius: 50%;
+    transition: transform 0.3s ease, filter 0.3s ease; /* Add transitions for hover effects */
+}
+
+.image_paragraph img:hover {
+    transform: scale(1.05); /* Scale up on hover */
+    filter: brightness(80%); /* Adjust brightness on hover */
+    box-shadow: 0 0 0 0.5 black;
+}
+
+.image_paragraph p {
+    width: 40%;
+    margin-left: 150px;
+    font-size: 18px;
+    padding-left: 20px; /* Add padding to separate text from image */
+   
+}
+
+
+
+@media (max-width: 768px) {
+    .image_paragraph img,
+    .image_paragraph p {
+        width: 100%;
+        margin-left: 0;
+        padding: 20px;
+        border: none; /* Remove border on smaller screens */
+    }
+}
+
+  
+  
+  
+  
+  
+  
+  
+
