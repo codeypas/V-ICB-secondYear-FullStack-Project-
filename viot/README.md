@@ -2,7 +2,7 @@
 
 ## Overview
 V-ICB is a **full-stack web application** designed to enhance student and faculty interaction. It provides a responsive user interface with diverse visual content, enabling seamless study material sharing, discussions, and engagement.
-
+ 
 ## Features
 - 📚 **Study Material Upload** – Faculty can upload PDFs, PPTs, and other resources.
 - 💬 **Interactive Comments** – Students can engage in discussions on study materials.
